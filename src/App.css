@@ -1,39 +1,52 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&display=swap");
+
+.background-black {
+  width: 100%;
+  height: 100%;
+}
+
+.checkbox-box {
+  position: relative;
+  min-height: 300px;
+  width: 450px;
+  background: white;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  margin: 30px auto 30px;
+  padding: 10px 10px;
+  font-family: "Prompt", sans-serif;
+}
+
+.title-text {
+  margin: auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
+.flexbox-div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.start-box {
+  justify-content: flex-start;
+  display: flex;
+  height: 41.98px;
+  text-align: center;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.end-box {
+  justify-content: flex-end;
+  display: flex;
+  margin: auto 0px auto;
+}
+
+.edit-form {
+  min-width: 380px;
+  font-size: 16px;
+  border: none;
+  margin: 11px 0px 0px 6px;
+}
+input:focus {
+  outline: none;
 }
